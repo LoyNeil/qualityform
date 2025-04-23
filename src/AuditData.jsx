@@ -34,7 +34,7 @@ export function AuditData() {
     console.log("📌 Responses Before Submitting:", responses);
 
     try {
-      const response = await fetch("http://127.0.0.1:3000/submit", {
+      const response = await fetch("https://qualityform.onrender.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
